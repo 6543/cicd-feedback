@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CI/CD Feedback Standard - Well-Known Response",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "The version of the CI/CD Feedback Standard implemented",
+      "example": "v0.1"
+    },
+    "softwareName": {
+      "type": "string",
+      "description": "The name of the software implementing the standard",
+      "example": "Woodpecker CI"
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of software implementing the standard",
+      "enum": ["forge", "cicd"]
+    }
+  },
+  "required": ["version", "softwareName", "type"],
+  "additionalProperties": false
+}
