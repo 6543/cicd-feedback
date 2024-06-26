@@ -252,7 +252,7 @@
         "uri": {
           "type": "string",
           "format": "uri",
-          "description": "URI to access the log"
+          "description": ""description": "URI to access the log, the content is either an plain text of an ongoing stream of plain test"
         }
       },
       "required": ["name", "uri"]
